@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="app.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -23,7 +24,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#food">Category</a></li>
                 <li><a href="#food-menu">Menu</a></li>
-                <li><a href="#testimonial">Testimonial</a></li>
+                <li><a href="#testimonials">Testimonial</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <h1 class="logo">FM</h1>
@@ -86,5 +87,136 @@
             </div>
         </div>
     </section>
+
+    <section id="food-menu">
+        <h2 class="food-menu-heading">
+            Food Menu
+        </h2>
+        <div class="food-menu-container container">
+            <div class="food-menu-item">
+                <div class="food-image"><img src="./images/food-menu1.jpg" alt="menu1">
+                </div>
+                <div class="food-description">
+                    <h2 class="food-title">Food Menu Item 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, repellendus!</p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-image"><img src="./images/food-menu2.jpg" alt="menu1">
+                </div>
+                <div class="food-description">
+                    <h2 class="food-title">Food Menu Item 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, repellendus!</p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-image"><img src="./images/food-menu3.jpg" alt="menu1">
+                </div>
+                <div class="food-description">
+                    <h2 class="food-title">Food Menu Item 3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, repellendus!</p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-image"><img src="./images/food-menu4.jpg" alt="menu1">
+                </div>
+                <div class="food-description">
+                    <h2 class="food-title">Food Menu Item 4</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, repellendus!</p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-image"><img src="./images/food-menu5.jpg" alt="menu1">
+                </div>
+                <div class="food-description">
+                    <h2 class="food-title">Food Menu Item 5</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, repellendus!</p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-image"><img src="./images/food-menu6.jpg" alt="menu1">
+                </div>
+                <div class="food-description">
+                    <h2 class="food-title">Food Menu Item 6</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, repellendus!</p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2 class="testimonial-title">
+            What our customers say
+        </h2>
+        <div class="testimonial-container container">
+            <div class="testimonial-box">
+                <div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <p class="testimonial-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic minus quod labore doloremque ipsum veritatis id obcaecati, atque illo praesentium, optio dolorum beatae ad sapiente, molestias at eveniet velit. Ratione rem provident voluptatum enim consectetur eligendi porro eum corrupti optio voluptatibus quae temporibus vero, amet ab omnis veritatis est explicabo?</p>
+                <div class="customer-detail">
+                    <div class="customer-photo">
+                        <img src="./images/male-photo1.jpg" alt="photo1">
+                        <div class="customer-name">John Doe</div>
+                    </div>
+                </div>
+                <div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <p class="testimonial-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic minus quod labore doloremque ipsum veritatis id obcaecati, atque illo praesentium, optio dolorum beatae ad sapiente, molestias at eveniet velit. Ratione rem provident voluptatum enim consectetur eligendi porro eum corrupti optio voluptatibus quae temporibus vero, amet ab omnis veritatis est explicabo?</p>
+                <div class="customer-detail">
+                    <div class="customer-photo">
+                        <img src="./images/male-photo2.jpg" alt="photo1">
+                        <div class="customer-name">Joooly Jim</div>
+                    </div>
+                </div>
+                <div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <p class="testimonial-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic minus quod labore doloremque ipsum veritatis id obcaecati, atque illo praesentium, optio dolorum beatae ad sapiente, molestias at eveniet velit. Ratione rem provident voluptatum enim consectetur eligendi porro eum corrupti optio voluptatibus quae temporibus vero, amet ab omnis veritatis est explicabo?</p>
+                <div class="customer-detail">
+                    <div class="customer-photo">
+                        <img src="./images/male-photo3.jpg" alt="photo1">
+                        <div class="customer-name">Jay Doe</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-container container">
+            <div class="contact-image">
+                <img src="./images/restraunt-image.jpg" alt="restraunt-image">
+            </div>
+            <div class="form-container">
+                <h2>Contact Us</h2>
+                <input type="text" name="" id="" placeholder="Name">
+                <input type="text" name="" id="" placeholder="E-mail">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Type your message here"></textarea>
+                <a href="#" class="btn btn-primary">Submit</a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <h2>Restraunt Website &copy; all right reserved</h2>
+    </footer>
 </body>
 </html>
